@@ -1,0 +1,22 @@
+{
+  "name": "lec-03",
+  "version": "1.0.0",
+  "description": "This is a Namaste Reactjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pjha72/Namaste-ReactJs.git"
+  },
+  "author": "Pawan Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pjha72/Namaste-ReactJs/issues"
+  },
+  "homepage": "https://github.com/Pjha72/Namaste-ReactJs#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
