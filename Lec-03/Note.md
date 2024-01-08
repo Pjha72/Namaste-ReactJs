@@ -32,4 +32,36 @@
    * Not add node-modules into git repo.
    * package-lock.json is helps to generate a node-modules on the server.
 
-10. 
+10. What is npx?
+  Ans : It is execute using npm
+
+11. HMR - Hot Module Reloading
+   File Watcher algorithm - parcel uses(Written in C++)
+
+12. What is parcel-cache?
+ Ans : 
+
+13 : Parcel bulid all the production file into the dist folder
+
+14. Parcel -> BUILDING
+           -> MINIFY
+           -> REMOVING Console.log
+           -> CLeaning Our Code
+           -> Dev and Production Build
+           -> Super Fast build algorithm
+           -> Image Optimization
+           -> Caching while Development
+           -> Compression
+           -> Compatble with older version of browser
+           -> HTTPS on dev -> npx parcel index.html --https
+           -> Manage a port number
+           -> Consistent Hashing algorithm
+           -> Zero Config
+
+15. Interview Question : 
+    * Why is React Fast? 
+    Ans :          
+           
+16. You should put parcel.cache into the .gitignore file.
+* Anything generate on the server automatically put it into git.
+* This is known as Transitive Dependecies
