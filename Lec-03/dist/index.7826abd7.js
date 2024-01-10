@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"jJWSB":[function(require,module,exports) {
+})({"5oBdT":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -578,9 +578,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"1xC6H":[function(require,module,exports) {
-var Refresh = require("6d18d6bd340e7473");
-var ErrorOverlay = require("74ad5ea14201648c");
+},{}],"f6v95":[function(require,module,exports) {
+var Refresh = require("5a2b717b28de1824");
+var ErrorOverlay = require("419529f813537086");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -599,11 +599,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"786KC":[function(require,module,exports) {
+},{"5a2b717b28de1824":"gJAEs","419529f813537086":"WgeNx"}],"gJAEs":[function(require,module,exports) {
 "use strict";
-module.exports = require("96622d495519d4e");
+module.exports = require("324ddb7bcea8c609");
 
-},{"96622d495519d4e":"hdge7"}],"hdge7":[function(require,module,exports) {
+},{"324ddb7bcea8c609":"2T7BA"}],"2T7BA":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -1063,8 +1063,8 @@ module.exports = require("96622d495519d4e");
     exports.setSignature = setSignature;
 })();
 
-},{}],"1dldy":[function(require,module,exports) {
-var process = require("d1546958eb39fdcf");
+},{}],"WgeNx":[function(require,module,exports) {
+var process = require("bab2986a5441739f");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -2794,7 +2794,7 @@ var process = require("d1546958eb39fdcf");
     ]);
 });
 
-},{"d1546958eb39fdcf":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"bab2986a5441739f":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2946,6 +2946,7 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$c1db.prelude(module);
 
 try {
+// imported react and reactdom from nodemodule folder
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -2953,18 +2954,19 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     id: "title"
-}, "Heading from parcel");
+}, "heading");
 const heading1 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     id: "title"
-}, "Hello World!!!");
+}, "heading1");
 const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "root"
+    id: "container"
 }, [
     heading,
     heading1
 ]);
-console.log(heading);
+// create root using createRoot
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+// passing react element inside root
 root.render(container);
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
@@ -2972,7 +2974,7 @@ root.render(container);
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21dqq":[function(require,module,exports) {
+},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"aRgCV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"kHoqi"}],"21dqq":[function(require,module,exports) {
 "use strict";
 module.exports = require("a569817e6ea559f6");
 
@@ -26324,7 +26326,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"aRgCV":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -26354,9 +26356,9 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"kHoqi":[function(require,module,exports) {
 "use strict";
-var Refresh = require("7422ead32dcc1e6b");
+var Refresh = require("5d45d594a5c926f9");
 function debounce(func, delay) {
     {
         let timeout = undefined;
@@ -26492,6 +26494,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["jJWSB","1xC6H","2Ew96"], "2Ew96", "parcelRequire5764")
+},{"5d45d594a5c926f9":"gJAEs"}]},["5oBdT","f6v95","2Ew96"], "2Ew96", "parcelRequire5764")
 
 //# sourceMappingURL=index.7826abd7.js.map
