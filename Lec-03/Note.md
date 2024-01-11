@@ -80,6 +80,7 @@ Ans : * To support an optimal caching and development experience Parcel utilizes
            -> Manage a port number
            -> Consistent Hashing algorithm
            -> Zero Config
+           -> Tree Shaking - Removing un-wanted code
 
 15. Interview Question : 
     * Why is React Fast?           
