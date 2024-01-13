@@ -1,0 +1,37 @@
+{
+  "name": "lec-05",
+  "version": "1.0.0",
+  "description": "Lec-05",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pjha72/Namaste-ReactJs.git"
+  },
+  "keywords": [
+    "Reactjs"
+  ],
+  "author": "Pawan Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pjha72/Namaste-ReactJs/issues"
+  },
+  "homepage": "https://github.com/Pjha72/Namaste-ReactJs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions"
+  ]
+}
