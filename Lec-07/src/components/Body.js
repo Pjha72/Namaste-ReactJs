@@ -5,7 +5,7 @@ import Shimmer from "./Shimmer"
 
 function filterData(searchText,restaurants) {
     const filterEle = restaurants.filter((ele) =>
-        ele?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase())
+        ele?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase())
     )
     return filterEle;
 }
@@ -28,13 +28,28 @@ const Body = () => {
 
     async function getRestaurants(){
         
-        const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
         // Optional chaining
         setAllRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
+    // const getRestaurants = async () => {
+    //     const data = await fetch(
+    //       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+    //     );
+    
+    //     const json = await data.json();
+    
+    //     // Optional Chaining
+    //     setAllRestaurants(
+    //       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    //     );
+    //     setFilteredRestaurants(
+    //       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    //     );
+    //   };
 
     // Conditional Rendering
     // IF restaurtants is empty => load shimmer UI
@@ -74,7 +89,7 @@ const Body = () => {
                 {
                     filteredRestaurants?.length==0 ? <><h1>No Restaurant match your filter!!!</h1></> : filteredRestaurants?.map((restaurant) => {
                       return (
-                        <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
+                        <RestaurantCard {...restaurant.info} key={restaurant?.info.id} />
                       )
                     })
                 }

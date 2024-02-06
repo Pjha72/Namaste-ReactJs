@@ -22,6 +22,7 @@
  - If dependency array is [searchText] then once after initial render and everytime after render(my searchText changes)
 
 5. What is cors?
+Ans: 
 
 6. Shimmer design UI : https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
 
@@ -31,4 +32,8 @@ Ans : console.log() : Expression : It works
 
 Link : https://react.dev/learn/javascript-in-jsx-with-curly-braces
 
-02:58:43
+8. Diff algo is basically is CORE of React.
+
+9. Why do we use JSON after the fetch?
+Ans : 
+
